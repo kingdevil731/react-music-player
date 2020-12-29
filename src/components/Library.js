@@ -4,7 +4,7 @@ import LibrarySong from "./LibrarySong";
 
 const Library = ({
   songs,
-  setCurrentSong,
+  setcurrentSong,
   audioRef,
   isPlaying,
   setSongs,
@@ -18,9 +18,10 @@ const Library = ({
           <LibrarySong
             audioRef={audioRef}
             song={song}
-            setCurrentSong={setCurrentSong}
+            setcurrentSong={setcurrentSong}
             songs={songs}
             id={song.id}
+            key={song.id}
             isPlaying={isPlaying}
             setSongs={setSongs}
           />
